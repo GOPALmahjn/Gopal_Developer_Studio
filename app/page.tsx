@@ -6,7 +6,6 @@ import SectionHeader from '@/components/SectionHeader';
 import ServiceCard from '@/components/ServiceCard';
 import ProjectCard from '@/components/ProjectCard';
 import TestimonialShowcase from '@/components/TestimonialShowcase';
-import ContactForm from '@/components/ContactForm';
 import SectionWrapper from '@/components/SectionWrapper';
 
 const services = [
@@ -20,33 +19,33 @@ const services = [
 
 const portfolio = [
   {
-    title: 'Modern SaaS Landing Page',
-    category: 'Landing Page',
-    summary: 'Engaging product experience with animation-driven CTA flow.',
+    title: 'Gopal_Cloth_Collection',
+    category: 'E-commerce',
+    summary: 'Responsive clothing store UI with product gallery, category filters, and a simple checkout flow. Static site optimized for fast loading and mobile shopping, deployed on GitHub Pages.',
     image: '/images/projects/modern-saas-landing.svg',
     links: {
-      demo: '#',
-      github: '#'
+      demo: 'https://gopalmahjn.github.io/Gopal_Cloth_Collection-/',
+      github: 'https://github.com/GOPALmahjn/Gopal_Cloth_Collection-'
     }
   },
   {
-    title: 'Creative Portfolio Website',
-    category: 'Portfolio',
-    summary: 'Clean personal brand showcase built with Tailwind and Next.js.',
+    title: 'Gopal_Jewellers',
+    category: 'E-commerce',
+    summary: 'Showcase site for a local jeweller featuring product galleries, contact/booking info, and SEO-friendly markup. Built for clean presentation and easy GitHub Pages deployment.',
     image: '/images/projects/creative-portfolio.svg',
     links: {
-      demo: '#',
-      github: '#'
+      demo: 'https://gopalmahjn.github.io/Gopal_Jewellers/',
+      github: 'https://github.com/GOPALmahjn/Gopal_Jewellers'
     }
   },
   {
-    title: 'Business Growth Website',
-    category: 'Business',
-    summary: 'Responsive website optimized for conversions and performance.',
+    title: 'Portfolio_',
+    category: 'Portfolio',
+    summary: 'Personal portfolio highlighting projects, skills, and contact methods with a minimal, responsive layout and fast performance. Deployed on GitHub Pages for quick sharing.',
     image: '/images/projects/business-growth.svg',
     links: {
-      demo: '#',
-      github: '#'
+      demo: 'https://gopalmahjn.github.io/Portfolio_/',
+      github: 'https://github.com/GOPALmahjn/Portfolio_'
     }
   }
 ];
@@ -251,39 +250,47 @@ export default function HomePage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.6 }}
-            className="grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:items-center"
+            className="space-y-8"
           >
-            {/* Left Side: Contact Info */}
-            <div className="relative space-y-8">
-              <div>
-                <h3 className="text-4xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-5xl">Let's build the future together.</h3>
-                <p className="mt-6 text-lg leading-8 text-slate-600 dark:text-slate-300">
-                  Whether you have a clear vision or just a rough idea, I'm here to turn it into a high-performing digital reality.
-                </p>
-              </div>
-
-              <div className="grid gap-6 sm:grid-cols-2">
-                <a href="mailto:hello@gopaldeveloperstudio.com" className="group rounded-3xl border border-slate-200/80 bg-white/60 p-6 shadow-xl shadow-slate-200/50 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:bg-white dark:border-slate-700/60 dark:bg-slate-900/50 dark:shadow-none dark:hover:bg-slate-900/80">
-                  <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-sky-100 text-sky-600 transition-colors group-hover:bg-sky-500 group-hover:text-white dark:bg-sky-500/20 dark:text-sky-300">
-                    <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
-                  </div>
-                  <h4 className="text-sm font-medium text-slate-500 dark:text-slate-400">Email Me</h4>
-                  <p className="mt-1 font-semibold text-slate-900 dark:text-white">hello@gopal.dev</p>
-                </a>
-
-                <a href="https://wa.me/919876543210" target="_blank" rel="noreferrer" className="group rounded-3xl border border-slate-200/80 bg-white/60 p-6 shadow-xl shadow-slate-200/50 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:bg-white dark:border-slate-700/60 dark:bg-slate-900/50 dark:shadow-none dark:hover:bg-slate-900/80">
-                  <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-violet-100 text-violet-600 transition-colors group-hover:bg-violet-500 group-hover:text-white dark:bg-violet-500/20 dark:text-violet-300">
-                    <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" /></svg>
-                  </div>
-                  <h4 className="text-sm font-medium text-slate-500 dark:text-slate-400">WhatsApp</h4>
-                  <p className="mt-1 font-semibold text-slate-900 dark:text-white">+91 98765 43210</p>
-                </a>
-              </div>
+            <div>
+              <h3 className="text-4xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-5xl">Let's build the future together.</h3>
+              <p className="mt-6 text-lg leading-8 text-slate-600 dark:text-slate-300">
+                Whether you have a clear vision or just a rough idea, I'm here to turn it into a high-performing digital reality.
+              </p>
             </div>
 
-            {/* Right Side: Contact Form */}
-            <div className="relative">
-              <ContactForm />
+            <div className="grid gap-6 sm:grid-cols-2">
+              <a href="mailto:gopalmahajantech18@gmail.com" className="group rounded-3xl border border-slate-200/80 bg-white/60 p-6 shadow-xl shadow-slate-200/50 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:bg-white dark:border-slate-700/60 dark:bg-slate-900/50 dark:shadow-none dark:hover:bg-slate-900/80">
+                <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-sky-100 text-sky-600 transition-colors group-hover:bg-sky-500 group-hover:text-white dark:bg-sky-500/20 dark:text-sky-300">
+                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                </div>
+                <h4 className="text-sm font-medium text-slate-500 dark:text-slate-400">Email Me</h4>
+                <p className="mt-1 font-semibold text-slate-900 dark:text-white">gopalmahajantech18@gmail.com</p>
+              </a>
+
+              <a href="https://wa.me/919340864608" target="_blank" rel="noreferrer" className="group rounded-3xl border border-slate-200/80 bg-white/60 p-6 shadow-xl shadow-slate-200/50 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:bg-white dark:border-slate-700/60 dark:bg-slate-900/50 dark:shadow-none dark:hover:bg-slate-900/80">
+                <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-violet-100 text-violet-600 transition-colors group-hover:bg-violet-500 group-hover:text-white dark:bg-violet-500/20 dark:text-violet-300">
+                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" /></svg>
+                </div>
+                <h4 className="text-sm font-medium text-slate-500 dark:text-slate-400">WhatsApp</h4>
+                <p className="mt-1 font-semibold text-slate-900 dark:text-white">+91 93408 64608</p>
+              </a>
+
+              <a href="https://topmate.io/gopal_mahajan10" target="_blank" rel="noreferrer" className="group rounded-3xl border border-slate-200/80 bg-white/60 p-6 shadow-xl shadow-slate-200/50 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:bg-white dark:border-slate-700/60 dark:bg-slate-900/50 dark:shadow-none dark:hover:bg-slate-900/80">
+                <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-600 transition-colors group-hover:bg-emerald-500 group-hover:text-white dark:bg-emerald-500/20 dark:text-emerald-300">
+                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6l4 2m-8 4h8m-4-16a9 9 0 100 18 9 9 0 000-18z" /></svg>
+                </div>
+                <h4 className="text-sm font-medium text-slate-500 dark:text-slate-400">Topmate</h4>
+                <p className="mt-1 font-semibold text-slate-900 dark:text-white">Book a session</p>
+              </a>
+
+              <a href="https://www.instagram.com/gopal.dev.studio/" target="_blank" rel="noreferrer" className="group rounded-3xl border border-slate-200/80 bg-white/60 p-6 shadow-xl shadow-slate-200/50 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:bg-white dark:border-slate-700/60 dark:bg-slate-900/50 dark:shadow-none dark:hover:bg-slate-900/80">
+                <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-pink-100 text-pink-600 transition-colors group-hover:bg-pink-500 group-hover:text-white dark:bg-pink-500/20 dark:text-pink-300">
+                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 7h10M7 12h10M7 17h10" /></svg>
+                </div>
+                <h4 className="text-sm font-medium text-slate-500 dark:text-slate-400">Instagram</h4>
+                <p className="mt-1 font-semibold text-slate-900 dark:text-white">@gopal.dev.studio</p>
+              </a>
             </div>
           </motion.div>
         </div>

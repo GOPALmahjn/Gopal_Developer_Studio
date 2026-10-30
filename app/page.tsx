@@ -37,43 +37,24 @@ const portfolio = [
       demo: 'https://gopalmahjn.github.io/Gopal_Jewellers/',
       github: 'https://github.com/GOPALmahjn/Gopal_Jewellers'
     }
-  },
-  {
-    title: 'Portfolio_',
-    category: 'Portfolio',
-    summary: 'Personal portfolio highlighting projects, skills, and contact methods with a minimal, responsive layout and fast performance. Deployed on GitHub Pages for quick sharing.',
-    image: '/images/projects/business-growth.svg',
-    links: {
-      demo: 'https://gopalmahjn.github.io/Portfolio_/',
-      github: 'https://github.com/GOPALmahjn/Portfolio_'
-    }
   }
 ];
 
 const testimonials = [
   {
-    quote: 'Gopal turned our idea into a polished website with speed and clarity. The result looks premium and feels effortless.',
-    client: 'Sana V.',
-    role: 'Startup Founder',
-    image: '/images/testimonials/sana.png',
-    rating: 5,
-    highlight: 'Polished & Speedy Delivery'
+    quote: "The website looks clean and professional, and it's easy to use.",
+    client: 'Ravi',
+    highlight: 'Clean & Professional'
   },
   {
-    quote: 'Professional, responsive, and detail-oriented. The website exceeded our expectations in every way.',
-    client: 'Arjun P.',
-    role: 'Marketing Lead',
-    image: '/images/testimonials/arjun.png',
-    rating: 5,
-    highlight: 'Exceeded Every Expectation'
+    quote: "I really like the overall design. It's easy to understand and navigate.",
+    client: 'Priya',
+    highlight: 'Easy to Navigate'
   },
   {
-    quote: 'Excellent communication and a modern technical approach. Highly recommended for businesses seeking a strong online presence.',
-    client: 'Ria S.',
-    role: 'Creative Director',
-    image: '/images/testimonials/ria.png',
-    rating: 5,
-    highlight: 'Modern Technical Approach'
+    quote: 'Good work! The website works well on mobile and loads smoothly.',
+    client: 'Raj',
+    highlight: 'Responsive & Smooth'
   }
 ];
 
@@ -266,14 +247,6 @@ export default function HomePage() {
                 </div>
                 <h4 className="text-sm font-medium text-slate-500 dark:text-slate-400">Email Me</h4>
                 <p className="mt-1 font-semibold text-slate-900 dark:text-white">gopalmahajantech18@gmail.com</p>
-              </a>
-
-              <a href="https://wa.me/919340864608" target="_blank" rel="noreferrer" className="group rounded-3xl border border-slate-200/80 bg-white/60 p-6 shadow-xl shadow-slate-200/50 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:bg-white dark:border-slate-700/60 dark:bg-slate-900/50 dark:shadow-none dark:hover:bg-slate-900/80">
-                <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-violet-100 text-violet-600 transition-colors group-hover:bg-violet-500 group-hover:text-white dark:bg-violet-500/20 dark:text-violet-300">
-                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" /></svg>
-                </div>
-                <h4 className="text-sm font-medium text-slate-500 dark:text-slate-400">WhatsApp</h4>
-                <p className="mt-1 font-semibold text-slate-900 dark:text-white">+91 93408 64608</p>
               </a>
 
               <a href="https://topmate.io/gopal_mahajan10" target="_blank" rel="noreferrer" className="group rounded-3xl border border-slate-200/80 bg-white/60 p-6 shadow-xl shadow-slate-200/50 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:bg-white dark:border-slate-700/60 dark:bg-slate-900/50 dark:shadow-none dark:hover:bg-slate-900/80">

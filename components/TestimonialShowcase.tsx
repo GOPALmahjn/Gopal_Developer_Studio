@@ -6,9 +6,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 type Testimonial = {
   quote: string;
   client: string;
-  role: string;
-  image: string;
-  rating: number;
   highlight: string;
 };
 
@@ -88,19 +85,11 @@ export default function TestimonialShowcase({ testimonials }: TestimonialShowcas
             className="flex flex-col justify-between h-full flex-grow z-10"
           >
             <div>
-              {/* Highlight Badge & Star Rating */}
+              {/* Highlight Badge */}
               <div className="flex flex-wrap items-center justify-between gap-4">
                 <span className="inline-flex items-center rounded-full bg-sky-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-sky-600 dark:bg-sky-500/20 dark:text-sky-300">
                   {activeTestimonial.highlight}
                 </span>
-                
-                <div className="flex gap-0.5 text-amber-400">
-                  {[...Array(activeTestimonial.rating)].map((_, i) => (
-                    <svg key={i} className="h-5 w-5 fill-current" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
-                </div>
               </div>
 
               {/* Quote Text */}
@@ -112,18 +101,13 @@ export default function TestimonialShowcase({ testimonials }: TestimonialShowcas
             {/* Author details */}
             <div className="mt-8 flex items-center justify-between border-t border-slate-200/60 pt-6 dark:border-slate-800/80">
               <div className="flex items-center gap-4">
-                <img
-                  src={activeTestimonial.image}
-                  alt={activeTestimonial.client}
-                  className="h-12 w-12 rounded-full object-cover border border-slate-200 dark:border-slate-800"
-                />
+                <span aria-hidden="true" className="flex h-12 w-12 items-center justify-center rounded-full border border-slate-200 bg-sky-500/10 font-semibold text-sky-600 dark:border-slate-800 dark:text-sky-300">
+                  {activeTestimonial.client.charAt(0)}
+                </span>
                 <div>
                   <cite className="not-italic font-bold text-slate-900 dark:text-white">
                     {activeTestimonial.client}
                   </cite>
-                  <p className="text-sm text-slate-500 dark:text-slate-400 font-medium">
-                    {activeTestimonial.role}
-                  </p>
                 </div>
               </div>
 
@@ -172,13 +156,11 @@ export default function TestimonialShowcase({ testimonials }: TestimonialShowcas
                 {isActive && (
                   <span className="absolute -inset-1 rounded-full border-2 border-sky-500/30 dark:border-sky-400/40 animate-ping pointer-events-none" />
                 )}
-                <img
-                  src={item.image}
-                  alt={item.client}
-                  className={`h-full w-full rounded-full object-cover border-2 transition-all duration-300 ${
-                    isActive ? 'border-sky-500 scale-105' : 'border-slate-200/80 dark:border-slate-800'
-                  }`}
-                />
+                <span aria-hidden="true" className={`flex h-full w-full items-center justify-center rounded-full border-2 bg-sky-500/10 font-semibold text-sky-600 transition-all duration-300 dark:text-sky-300 ${
+                  isActive ? 'border-sky-500 scale-105' : 'border-slate-200/80 dark:border-slate-800'
+                }`}>
+                  {item.client.charAt(0)}
+                </span>
               </div>
 
               {/* Client details & highlight */}
@@ -189,9 +171,6 @@ export default function TestimonialShowcase({ testimonials }: TestimonialShowcas
                   }`}>
                     {item.client}
                   </h4>
-                  <span className="text-xs font-semibold text-slate-400 dark:text-slate-500">
-                    {item.role}
-                  </span>
                 </div>
                 <p className="mt-1 truncate text-sm text-slate-500 dark:text-slate-400 font-medium">
                   "{item.highlight}"
